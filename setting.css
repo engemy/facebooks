@@ -1,0 +1,93 @@
+body{
+    background-image:url(images/background.png)
+}
+.navbar-nav {
+    float: right !important;
+    
+   }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #535353 !important;
+}
+.logo-img img {
+   width: 70px;
+    height: 70px;
+   
+}
+.siteName h1 {
+    font-size: 30px;
+    color: aliceblue;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+   }
+@media screen and (max-width: 600px) {
+    .siteName h1{
+        left: 10%;
+    }
+    
+   
+    
+    
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    
+    background-color: #535353;
+    
+    
+}
+.navbar-nav > li > a {
+    
+   padding: 5px 0px;
+border: 1px solid #535353;
+border-radius: 5px;
+font-size: 20px;
+text-decoration: none;
+background-color: #f25d23;
+margin-right: 15px;
+color: aliceblue !important; 
+    margin: 10px;
+    
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color:#f25d23 !important;
+    background-color: white !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: #f25d23 !important ;
+    background-color:white !important;
+}
+h2{
+    text-shadow: 1px 1px #f15d22;
+    color: black;
+    font-size: 25px !important;
+    padding: 10px;
+}
+label {
+    
+    font-size: 20px;
+    color: #535353;
+    padding: 10px;
+}
+.form-control {
+    
+    width: 83%!important;
+    margin: 10px;
+ 
+}
+.btn-default{
+    position: absolute;
+    left: 77%;
+    font-size: 20px !important;
+    border:1px solid  #f15d22 !important;
+}
+.btn-default:hover{
+    color:white !important;
+    background-color: #f15d22 !important; 
+}
+input[type="file"] {
+
+    
+    height: 40px;
+
+}

@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>Group</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="group.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="group.js" type="text/javascript"></script>
+  
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                  </button>
+                 <div class="logo-img"><img src="images/logo.png"></div>
+                <div class="siteName"> <h1> Spartan </h1></div>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li ><a href="home.html" target="_blank">Home</a></li>
+                    
+                    <li class="active"><a href="#">Groups</a></li>
+                      <li><a href="#">Search</a></li>
+                      <li><a href="setting.html" target="_blank">Setting</a></li> 
+                  </ul> 
+                  </div>
+                  </div>
+            </nav>
+            <a class="groups" href="#">Discover</a>
+            <a class="groups" href="#">Groups</a>
+            
+            
+             <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Create Group</button> <br> <br> <br> <br> 
+           
+           
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Creat new group</h4>
+        </div>
+        <div class="modal-body">
+            
+          <img class="modal1"src="images/1m.png">   
+          <p>Groups are great for getting things done and staying in touch with just the people you want. Share photos and videos, have conversations, make plans and more.</p> <br>
+            <h6>Name your group</h6>
+            <input class="modalin1" type="text"> <br>
+            <h6>Add some friends</h6>
+            <input class="modalin1" placeholder="Enter name or email address" type="text">
+            <h6>Choose profile Picture</h6>
+            <input type="file" value="choose file">
+            <h6>Choose Cover Picture</h6>
+            <input type="file" value="choose file">
+         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="creatgroup()">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+            
+            
+           
+       <div class="row">
+                <div class="col-md-4   ">
+                     <p id="Pending">Pending Invites</p><hr>
+                    <div class="left">
+                    <img  src="images/1.jpg">
+                    <a  href="#" class="gname"> Memo For Sweets</a>
+                    <a class = "joins" href="#" onClick="action()">Join</a>
+                   <a class = "joins" href="#" onClick="action()">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/2.jpg">
+                    <a  href="#" class="gname"> Hand Made (AYA)</a>
+                    <a class = "joins"  href="#">Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/3.jpg">
+                    <a  href="#" class="gname"> Emy photographer</a>
+                    <a class = "joins" href="#" >Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/4.jpg">
+                    <a  href="#" class="gname"> Amr photographer</a>
+                    <a class = "joins" href="#" >Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/5.jpg">
+                    <a  href="#" class="gname"> For your wedding</a>
+                    <a class = "joins" href="#" >Join</a>
+                    <a class = "joins" href="#">Decline</a>
+                    </div>
+           </div>
+                <div class="col-md-4 ">
+                    <div class="left">
+                    <img  src="images/6.jpg">
+                    <a  href="#" class="gname"> Love For ever</a>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                    <a class = "joins" href="#">Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/7.jpg">
+                    <a  href="#" class="gname"> Girles Fashiones</a>
+                    <a class = "joins" href="#">Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/8.jpg">
+                    <a  href="#" class="gname"> Pizza Hot for you</a>
+                    <a class = "joins" href="#" >Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/9.jpg">
+                    <a  href="#" class="gname">Emy MakeupArtist</a>
+                    <a class = "joins" href="#">Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/10.jpg">
+                    <a  href="#" class="gname">FOR GIRLES only</a>
+                    <a class = "joins" href="#">Join</a>
+                    <a class = "joins" href="#">Decline</a> <hr>
+                    </div>
+                    <div class="left">
+                    <img  src="images/11.jpg">
+                    <a  href="#" class="gname">SO SWEETY</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class = "joins" href="#">Join</a>
+                    <a class = "joins" href="#">Decline</a> 
+                    </div>
+           </div>
+           
+           
+                <div class="col-md-3">
+                     <p id="para">My Groups</p> 
+                    <div class="Right">
+                    <img  src="images/1r.jpg">
+                    <a  href="#" class="rname">Web Design Group </a>  
+                    </div>
+                    <div class="Right">
+                    <img  src="images/2r.jpg">
+                    <a  href="#" class="rname">Fci 2015:2019 </a>  
+                    </div>
+                     <div class="Right">
+                    <img  src="images/3r.jpg">
+                    <a  href="#" class="rname">Hand Made </a>  
+                    </div>
+                     <div class="Right">
+                    <img  src="images/4r.jpg">
+                    <a  href="#" class="rname">Soma Store</a>  
+                    </div>
+                     <div class="Right">
+                    <img  src="images/5r.jpg">
+                    <a  href="#" class="rname">Angry Birds  </a>  
+                    </div>
+                    <div class="Right">
+                    <img  src="images/6r.jpg">
+                    <a  href="#" class="rname">حاسبات ومعلومات  </a>  
+                    </div>
+                     <div class="Right">
+                    <img  src="images/7r.jpg">
+                    <a  href="#" class="rname">Computer science   </a>  
+                    </div>
+                    <div class="Right">
+                    <img  src="images/9r.jpg">
+                    <a  href="#" class="rname">Makeup Artist   </a>  
+                    </div>
+           </div>
+            </div>
+               <div class="Right" style="display:none;">
+                    <img  src="images/15.jpg">
+                    <a  href="#" class="rname">Makeup Artist   </a>  
+                    </div>
+                
+                
+      </div>
+        <script>
+            function creatgroup(){
+                 document.getElementsByClassName('right').style.display = "block";
+            }
+        
+        
+        
+        
+        
+        </script>
+  
+    </body>
+
+</html>
